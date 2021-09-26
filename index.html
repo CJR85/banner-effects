@@ -11,5 +11,13 @@
     <section class="sec">
       <div class="dot"></div>
     </section>
+
+    <script>
+      document.addEventListener('mousemove', function (e) {
+        const dot = document.querySelector('.dot');
+        dot.style.left = e.pageX + 'px';
+        dot.style.top = e.pageX + 'px';
+      });
+    </script>
   </body>
 </html>
